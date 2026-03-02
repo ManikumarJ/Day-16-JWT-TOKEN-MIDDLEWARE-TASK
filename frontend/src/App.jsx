@@ -21,7 +21,7 @@ const App = () => {
     e.preventDefault();
 
     try {
-      const res = await axios.post( "http://localhost:5000/api/student/create", data);
+      const res = await axios.post( "http://localhost:5000/api/middleware/create", data);
 
       // console.log(res.data.msg);
 
