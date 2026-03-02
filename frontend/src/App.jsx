@@ -35,7 +35,7 @@ const App = () => {
 
   return (
     <>
-      <h1 style={{ textAlign: "center" }}>Student Register Form</h1>
+      <h1 style={{ textAlign: "center" }}>Login Form</h1>
 
       <form onSubmit={handleSubmit} style={{ textAlign: "center" }}>
 
