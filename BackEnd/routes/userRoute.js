@@ -1,14 +1,11 @@
 import express from "express";
-import { createData, getData } from "../controllers/dataControl.js";
+import { createData } from "../controllers/dataControl.js";
+import { validateUser } from "../middleware/validate.js";  
 
-const middlewareRoute = express.Router()
+const middlewareRoute = express.Router();
 
+middlewareRoute.post("/create", validateUser, createData);
 
-middlewareRoute.post('/create',createData)
-
-
-
-export default middlewareRoute
+export default middlewareRoute;
 
 //  http://localhost:5000/api/middleware/create
-//  http://localhost:5000/api/middleware/getData
