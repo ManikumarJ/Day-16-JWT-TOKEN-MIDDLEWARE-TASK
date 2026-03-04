@@ -4,7 +4,7 @@ import { useState } from "react";
 const App = () => {
 
   const studentSchema = {
-    Name: "",
+    name: "",
     email: "",
     password: "",
   };
@@ -39,7 +39,7 @@ const App = () => {
 
       <form onSubmit={handleSubmit} style={{ textAlign: "center" }}>
 
-        <input type="text" name="Name" placeholder="Name" value={data.Name} onChange={handleChange} required />
+        <input type="text" name="name" placeholder="name" value={data.name} onChange={handleChange} required />
         <br /><br />
 
 

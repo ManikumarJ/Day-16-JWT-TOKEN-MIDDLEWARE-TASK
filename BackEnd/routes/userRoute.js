@@ -8,4 +8,4 @@ middlewareRoute.post("/create", validateUser, createData);
 
 export default middlewareRoute;
 
-//  http://localhost:5000/api/middleware/create
+// http://localhost:5000/api/middleware/create
